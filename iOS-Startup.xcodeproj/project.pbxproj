@@ -23,6 +23,7 @@
 		C8FA08981DED879700265806 /* UIButton+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA08921DED879700265806 /* UIButton+Block.swift */; };
 		C8FA08991DED879700265806 /* UIViewController+NavgationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA08931DED879700265806 /* UIViewController+NavgationItem.swift */; };
 		C8FA089A1DED879700265806 /* UIViewController+topMostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA08941DED879700265806 /* UIViewController+topMostViewController.swift */; };
+		C8FA089D1DEDA9CF00265806 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA089C1DEDA9CF00265806 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C8FA08921DED879700265806 /* UIButton+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Block.swift"; sourceTree = "<group>"; };
 		C8FA08931DED879700265806 /* UIViewController+NavgationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavgationItem.swift"; sourceTree = "<group>"; };
 		C8FA08941DED879700265806 /* UIViewController+topMostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+topMostViewController.swift"; sourceTree = "<group>"; };
+		C8FA089C1DEDA9CF00265806 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				C8FA086A1DED7EBD00265806 /* Main.storyboard */,
 				C8FA086D1DED7EBD00265806 /* Assets.xcassets */,
 				C8FA086F1DED7EBD00265806 /* LaunchScreen.storyboard */,
+				C8FA089C1DEDA9CF00265806 /* R.generated.swift */,
 				C8FA08721DED7EBD00265806 /* Info.plist */,
 			);
 			path = "iOS-Startup";
@@ -179,6 +182,7 @@
 			buildConfigurationList = C8FA08801DED7EBD00265806 /* Build configuration list for PBXNativeTarget "iOS-Startup" */;
 			buildPhases = (
 				6B8825B78295C5A5A1600265 /* [CP] Check Pods Manifest.lock */,
+				C8FA089B1DEDA88A00265806 /* Run Script */,
 				C8FA085F1DED7EBD00265806 /* Sources */,
 				C8FA08601DED7EBD00265806 /* Frameworks */,
 				C8FA08611DED7EBD00265806 /* Resources */,
@@ -305,6 +309,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Startup/Pods-iOS-Startup-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C8FA089B1DEDA88A00265806 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
 		F4BE82E036F4EA35D1F35B9A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,6 +356,7 @@
 				C8FA088C1DED828100265806 /* RxAlamofire.swift in Sources */,
 				C8FA08961DED879700265806 /* NSDate+Extension.swift in Sources */,
 				C8FA08991DED879700265806 /* UIViewController+NavgationItem.swift in Sources */,
+				C8FA089D1DEDA9CF00265806 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

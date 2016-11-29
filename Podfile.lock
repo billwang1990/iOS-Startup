@@ -8,6 +8,7 @@ PODS:
   - RxCocoa (3.0.1):
     - RxSwift (~> 3.0)
   - RxSwift (3.0.1)
+  - SlideMenuControllerSwift (3.0.0)
   - SnapKit (3.0.2)
 
 DEPENDENCIES:
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - R.swift
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
+  - SlideMenuControllerSwift
   - SnapKit (from `https://github.com/SnapKit/SnapKit`, commit `02a0b2d2b7303782ce348869c12e67a9d5f019b9`)
 
 EXTERNAL SOURCES:
@@ -37,8 +39,9 @@ SPEC CHECKSUMS:
   R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
   RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
   RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+  SlideMenuControllerSwift: 9c0a84f9a3fba51681debd7be77617094562ebcc
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: bccb59a863f63eae054b2bb61ae091fdb81bbf77
+PODFILE CHECKSUM: 31b7a8500fabfcb037b0c1f80de8ad12c09bbd3c
 
 COCOAPODS: 1.1.1

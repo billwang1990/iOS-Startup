@@ -15,7 +15,7 @@ def shared_pods
   
   # pod 'Bugly', '2.4.2'
   # pod 'libWeChatSDK', '1.7.1'
-  # pod 'SlideMenuControllerSwift'
+  pod 'SlideMenuControllerSwift'
 end
 
 target 'iOS-Startup' do
