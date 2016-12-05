@@ -39,7 +39,7 @@ public struct NetworkAccessor {
             }
             print(">>>>>>\n 请求接口: \(path) \n 参数: \(json) >>>>>>\n")
             
-            return try Alamofire.URLEncoding.default.encode(urlRequest, with: [:])
+            return try Alamofire.JSONEncoding.default.encode(urlRequest, with: json)
         }
         
         func updateParameter(_ parameters: inout [String: AnyObject], key: String, value: AnyObject?) {
